@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ColorCatch: Tab Color Picker",
+  "version": "1.0",
+  "description": "Unleash the power of colors! Capture vibrant snapshots of your active tab and pick out dazzling colors from any corner of the page with ColorCatch.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ColorCatch: Tab Color Picker",
+    "default_icon": {
+      "16": "./colorCatchLogo.png",
+      "48": "./colorCatchLogo.png",
+      "128": "./colorCatchLogo.png"
+    }
+  },
+  "icons": {
+    "16": "./colorCatchLogo.png",
+    "48": "./colorCatchLogo.png",
+    "128": "./colorCatchLogo.png"
+  }
+}

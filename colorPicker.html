@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'sha384-Cs3dgUx6+jDxxuqHvVH8Onpyj2LF1gKZurLDlhqzuJmUqVYMJ0THTWpxK5Z086Zm' https://cdnjs.cloudflare.com/; style-src 'self';"
+    /> -->
+
+    <link rel="stylesheet" href="./colorPicker.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ColorCatch</title>
+  </head>
+  <body>
+    <div class="move">
+      <div class="overlay">
+        <input
+          type="color"
+          id="colorpicker"
+          class="color-preview"
+          name="color"
+          value="#ffffff"
+        />
+
+        <input type="text" class="hex-code" value="#ffffff" id="hexcolor" />
+        <button id="copyButton">
+          <img src="./copy-icon.png" class="copy-symbol" alt="" />
+        </button>
+      </div>
+      <img class="catchLogo" src="./colorCatchThree.png" alt="#" />
+    </div>
+
+    <canvas id="snapshotCanvas" willReadFrequently="true"></canvas>
+
+    <script src="./cursor.js"></script>
+    <script src="./colorPicker.js"></script>
+  </body>
+</html>
